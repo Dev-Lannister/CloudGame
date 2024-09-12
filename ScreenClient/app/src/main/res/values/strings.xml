@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">云游戏</string>
+    <string name="action_settings">Settings</string>
+    <string name="h_dpi">1920*1080</string>
+    <string name="m_dpi">1280*720</string>
+    <string name="l_dpi">960*540</string>
+</resources>

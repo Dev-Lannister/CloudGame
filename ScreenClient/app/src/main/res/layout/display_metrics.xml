@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<TextView
+        android:id="@+id/hDpi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/h_dpi" />
+
+    <TextView
+        android:id="@+id/mDpi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/m_dpi" />
+
+    <TextView
+        android:id="@+id/lDpi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/l_dpi" />-->
+    <ListView
+        android:id="@+id/dpi_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+</LinearLayout>

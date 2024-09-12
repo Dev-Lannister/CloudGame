@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/dpi_setting_title"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/dpi_change"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择分辨率"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dpi_setting"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dpi_setting_title"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/dpi_setting_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:orientation="horizontal"
+            android:paddingTop="15dp">
+
+            <RadioButton
+                android:id="@+id/xxh_dpi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableLeft="@drawable/rb_file_share"
+                android:drawablePadding="5dp"
+                android:text="超清"
+                android:textSize="11sp" />
+
+            <RadioButton
+                android:id="@+id/xh_dpi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableLeft="@drawable/rb_file_share"
+                android:drawablePadding="5dp"
+                android:text="高清"
+                android:textSize="11sp" />
+
+            <RadioButton
+                android:id="@+id/m_dpi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableLeft="@drawable/rb_file_share"
+                android:drawablePadding="5dp"
+                android:text="标清"
+                android:textSize="11sp" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/bitRate_setting_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:orientation="horizontal"
+            android:paddingTop="15dp">
+
+            <RadioButton
+                android:id="@+id/xxxh_bitRate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableLeft="@drawable/rb_file_share"
+                android:drawablePadding="5dp"
+                android:text="6M"
+                android:textSize="11sp" />
+
+            <RadioButton
+                android:id="@+id/xxh_bitRate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableLeft="@drawable/rb_file_share"
+                android:drawablePadding="5dp"
+                android:text="4M"
+                android:textSize="11sp" />
+
+            <RadioButton
+                android:id="@+id/xh_bitRate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableLeft="@drawable/rb_file_share"
+                android:drawablePadding="5dp"
+                android:text="3M"
+                android:textSize="11sp" />
+
+            <RadioButton
+                android:id="@+id/m_bitRate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableLeft="@drawable/rb_file_share"
+                android:drawablePadding="5dp"
+                android:text="2M"
+                android:textSize="11sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/dpi_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/exit_game"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="退出游戏"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/submit_setting"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确定"/>
+        </LinearLayout>
+        <!--<LinearLayout
+            android:id="@+id/audio_play_test"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开启音频"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/audio_pause_test"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关闭音频"/>
+        </LinearLayout>-->
+    </LinearLayout>
+
+</RelativeLayout>
